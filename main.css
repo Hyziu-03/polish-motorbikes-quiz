@@ -9,40 +9,94 @@ html {
     --secondary-color: #080936;
     --dark-color: #303030;
     --light-color: #CFCFCF;
+    --tile-border-radius: 12.5px;
 
     font-size: 12px;
     font-family: 'Bitter', serif;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
 }
 
 .container {
-    background-color: var(--secondary-color);
-    color: var(--dark-color);
-
-    /* ! It seems that grid doesn't work... */
-    display: grid;
-    grid-template-rows: repeat(6, auto);
-    row-gap: 24px;
+    width: 97.5vw;
+    margin: 0 auto;
 }
 
 .header {
     background: var(--primary-color);
     border: 5px solid var(--light-color);
-    border-radius: 12.5px;
+    border-radius: var(--tile-border-radius);
     padding: 16px 0;
     text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .fa-bicycle {
     font-size: 2.75rem;
-
-    /* ! It seems that the icon isn't vertically align... */
-    vertical-align: middle;
+    margin: 0 10px;
 }
 
 .title {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: bold;
+}
+
+.landing-page {
+    display: flex;
+    border-radius: var(--tile-border-radius);
+    background-color: var(--primary-color);
+    padding: 24px;
+}
+
+.text-container {
+    width: calc(97.5vw / 2);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headline {
+    font-weight: 600;
+    font-size: 2.25rem;
+    text-align: center;
+    color: var(--dark-color);
+    margin: 20px 0 10px 0;
+}
+
+.description {
+    font-size: 1.75rem;
+    line-height: 175%;
+    color: var(--dark-color);
+    margin: 0 40px;
+}
+
+.test-your-knowledge {
+    background: var(--dark-color);
+    box-shadow: 5px 5px 2.5px rgba(48, 48, 48, 0.4);
+    border-radius: var(--tile-border-radius);
+    font-size: 2.25rem;
+    line-height: 125%;
+    font-family: 'Bitter', sans-serif;
+    color: var(--light-color);
+    padding: 8px;
+    margin: 10px 0 20px 0;
+    /* ! The button has too big font size and too small padding. It's too wide, obviously. */
+}
+
+.image-container {
+    width: calc(97.5vw / 2);
+    display: grid;
+    place-items: center;
+    /* ! The image has too much white space around. */
+}
+
+.reading-doodle {
+    width: 280px;
+    height: auto;
+    /* ! Alternative text is needed to be inserted. */
 }
