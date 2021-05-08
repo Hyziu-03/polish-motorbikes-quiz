@@ -13,8 +13,9 @@ html {
 
     font-size: 12px;
     font-family: 'Bitter', serif;
-    background-color: var(--secondary-color);
     color: var(--dark-color);
+
+    background-color: var(--secondary-color);
 }
 
 .container {
@@ -27,17 +28,21 @@ html {
     border: 5px solid var(--light-color);
     border-radius: var(--tile-border-radius);
     padding: 16px 0;
-    text-align: center;
     margin-bottom: 20px;
+
+    text-align: center;
     font-weight: bold;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* ! Header needs it's position to be fixed and text unselectable. */
 }
 
 .fa-bicycle {
     font-size: 2.75rem;
+
     margin: 0 10px;
 }
 
@@ -48,6 +53,7 @@ html {
 
 .landing-page {
     display: flex;
+
     border-radius: var(--tile-border-radius);
     background-color: var(--primary-color);
     padding: 24px;
@@ -55,6 +61,7 @@ html {
 
 .text-container {
     width: calc(97.5vw / 2);
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -65,38 +72,100 @@ html {
     font-size: 2.25rem;
     text-align: center;
     color: var(--dark-color);
-    margin: 20px 0 10px 0;
+
+    margin-top: 20px;
 }
 
 .description {
     font-size: 1.75rem;
     line-height: 175%;
     color: var(--dark-color);
-    margin: 0 40px;
+
+    margin: 20px 40px 10px 40px;
 }
 
 .test-your-knowledge {
     background: var(--dark-color);
-    box-shadow: 5px 5px 2.5px rgba(48, 48, 48, 0.4);
+    box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
     border-radius: var(--tile-border-radius);
+    border: 2.5px dashed transparent;
+    padding: 8px 16px;
+    transition: .5s all ease;
+    user-select: none;
+
+    margin: 10px 25% 20px 25%;
+    width: 50%;
+    /* ? Thanks to these clumsy lines the button is centered. */
+
     font-size: 2.25rem;
     line-height: 125%;
     font-family: 'Bitter', sans-serif;
     color: var(--light-color);
-    padding: 8px;
-    margin: 10px 0 20px 0;
-    /* ! The button has too big font size and too small padding. It's too wide, obviously. */
+}
+
+.test-your-knowledge:hover {
+    border: 2.5px dashed var(--light-color); 
+    cursor: pointer;
+}
+
+.test-your-knowledge:active {
+    background-color: var(--secondary-color);
 }
 
 .image-container {
     width: calc(97.5vw / 2);
+
     display: grid;
     place-items: center;
-    /* ! The image has too much white space around. */
+
+    /* ! This image should be located closer to the left. */
 }
 
 .reading-doodle {
     width: 280px;
     height: auto;
+    
     /* ! Alternative text is needed to be inserted. */
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+
+    height: min-content;
+    padding: 16px;
+    border-radius: var(--tile-border-radius);
+}
+
+.social-media-icon {
+    display: block;
+
+    text-align: center;
+}
+
+.toggle-menu {
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 20px;
+    border-radius: var(--tile-border-radius);
+    border: none;
+    transition: .5s all ease;
+    
+    font-size: 1.75rem;
+
+    /* ! This button needs JavaScript to help showing and hiding the icons. */
+}
+
+.toggle-menu:hover {
+    box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
+    cursor: pointer;
+
+    /* ! This button needs it's animation to be redesigned and an active status added. */
+}
+
+.fab {
+    margin: 15px 0;
+
+    font-size: 2rem;
 }
