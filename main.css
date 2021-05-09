@@ -29,6 +29,10 @@ html {
     border-radius: var(--tile-border-radius);
     padding: 16px 0;
     margin-bottom: 20px;
+    user-select: none;
+    position: fixed;
+    top: 0;
+    width: 97.5vw;
 
     text-align: center;
     font-weight: bold;
@@ -36,8 +40,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* ! Header needs it's position to be fixed and text unselectable. */
 }
 
 .fa-bicycle {
@@ -57,6 +59,7 @@ html {
     border-radius: var(--tile-border-radius);
     background-color: var(--primary-color);
     padding: 24px;
+    margin-top: 90px;
 }
 
 .text-container {
@@ -138,8 +141,6 @@ html {
 }
 
 .social-media-icon {
-    display: block;
-
     text-align: center;
 }
 
@@ -151,21 +152,23 @@ html {
     border-radius: var(--tile-border-radius);
     border: none;
     transition: .5s all ease;
+    box-shadow: 2.5px 2.5px 0 rgba(48, 48, 48, .75);
     
     font-size: 1.75rem;
-
-    /* ! This button needs JavaScript to help showing and hiding the icons. */
 }
 
 .toggle-menu:hover {
     box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
     cursor: pointer;
+}
 
-    /* ! This button needs it's animation to be redesigned and an active status added. */
+.toggle-menu:active .fa-ellipsis-v {
+    transform: rotate(90deg);
 }
 
 .fab {
     margin: 15px 0;
+    opacity: 0;
 
     font-size: 2rem;
 }
