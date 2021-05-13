@@ -15,12 +15,19 @@ function hideIcons() {
     for(var i = 0; i < 3; i++) {
         socialMediaIcons[i].style.opacity = "0";
     }
+    for (var i = 0; i < 3; i++) {
+        socialMediaIcons[i].style.cursor = "";
+    }
 }
 function showIcons() {
     for(var i = 0; i < 3; i++) {
         socialMediaIcons[i].style.opacity = "1";
     }
+    for (var i = 0; i < 3; i++) {
+        socialMediaIcons[i].style.cursor = "pointer";
+    }
 }
+// $ Links shouldn't be reachable when the menu is collapsed.
 
 // ? Click listener.
 var rotated = false;
@@ -29,17 +36,9 @@ menuButton.addEventListener('click', function() {
         icon.style.transform = "rotate(90deg)";
         rotated = true;
         showIcons();
-
-		for(var i = 0; i < 3; i++) {
-			socialMediaIcons[i].style.cursor = "pointer";
-		}
     } else {
         icon.style.transform = "rotate(0deg)";
         rotated = false;
         hideIcons();
-
-		for (var i = 0; i < 3; i++) {
-			socialMediaIcons[i].style.cursor = "default";
-		}
     }
 });
