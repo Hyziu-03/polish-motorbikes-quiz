@@ -50,7 +50,9 @@ html {
     align-items: center;
 }
 
-.header:focus-visible, .text-container:focus-visible, .image-container:focus-visible{
+.header:focus-visible,
+.text-container:focus-visible,
+.image-container:focus-visible {
     background-color: var(--darkened-primary-color);
     outline: none !important;
     border-radius: var(--tile-border-radius);
@@ -74,7 +76,7 @@ html {
     border-radius: var(--tile-border-radius);
     background-color: var(--primary-color);
     padding: 24px;
-    margin-top: 90px;
+    margin: 90px 0 20px 0;
 }
 
 .text-container {
@@ -103,7 +105,8 @@ html {
     margin: 20px 40px 10px 40px;
 }
 
-.test-your-knowledge {
+.test-your-knowledge,
+.take-the-test {
     background: var(--dark-color);
     box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
     border-radius: var(--tile-border-radius);
@@ -120,7 +123,14 @@ html {
     color: var(--light-color);
 }
 
-.test-your-knowledge:hover, .test-your-knowledge:focus-visible {
+.take-the-test {
+    width: 20vw;
+}
+
+.test-your-knowledge:hover,
+.test-your-knowledge:focus-visible,
+.take-the-test:hover,
+.take-the-test:focus-visible {
     box-shadow: 7.5px 7.5px 0 rgba(48, 48, 48, .75);
     cursor: pointer;
     outline: none;
@@ -169,11 +179,12 @@ html {
     border: 2.5px solid transparent;
     transition: .5s all ease;
     box-shadow: 2.5px 2.5px 0 rgba(48, 48, 48, .75);
-    
+
     font-size: 1.75rem;
 }
 
-.toggle-menu:hover, .toggle-menu:focus-visible {
+.toggle-menu:hover,
+.toggle-menu:focus-visible {
     box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
     cursor: pointer;
     outline: none;
@@ -194,3 +205,71 @@ html {
     border: 5px solid var(--darkened-primary-color);
     background-color: var(--darkened-primary-color);
 }
+
+.form {
+    background-color: var(--primary-color);
+    border-radius: var(--tile-border-radius);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.form::before,
+.form::after {
+    content: "";
+    position: absolute;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 7.5vw;
+}
+
+.form::before {
+    left: -7.5vw;
+    top: 5%;
+}
+
+.form::after {
+    right: -7.5vw;
+    bottom: 5%;
+}
+
+.smaller-headline {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2.75rem;
+    text-align: center;
+
+    padding: 25px 0;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.first-input,
+.second-input {
+    margin: 5px 0;
+}
+
+.input {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+    text-align: center;
+}
+
+#email-input,
+#name-input {
+    border: 2.5px solid var(--dark-color);
+    background-color: var(--light-color);
+    border-radius: calc(var(--tile-border-radius) * 1.5);
+    padding: 0.75rem 10px;
+    font-family: 'Bitter', serif;
+}
+
+/* $ This file needs to be reorganized and the code needs to become accessible. */
