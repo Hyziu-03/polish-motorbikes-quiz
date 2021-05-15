@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="title" content="Quiz About Polish Motorbikes">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Szymon Hyziak">
 
     <title>Quiz About Polish Motorbikes - Szymon Hyziak</title>
 
     <link rel="stylesheet" href="css/main.css">
-    <!-- $ Additional information needs to be inserted here. -->
-</head>
 
+    <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
 <body>
     <div class="container">
-        <div class="header" tabindex="0">
-            <i class="fas fa-bicycle"></i>
-            <h1 class="title">Quiz About Polish Motorbikes</h1>
-            <!-- $ The header needs to be more distinguishable from other parts of the website. -->
-        </div>
-
-        <div class="landing-page">
-            <div class="text-container" tabindex="0">
-                <h2 class="headline">Does Poland remind you of motorbikes?</h2>
-                <div class="description">High quality vehicles were being sold to Europe
-                    in millions of pieces just a few decades ago! <br>
-                    Have I made you interested?
+        <header>
+            <div class="header" tabindex="0" id="header">
+                <a href="index.html" class="come-back link" tabindex="-1"></a>
+                <i class="fas fa-bicycle"></i>
+                <h1 class="title">Quiz About Polish Motorbikes</h1>
+            </div>
+        </header>
+        <main>
+            <article>
+                <div class="landing-page">
+                    <div class="text-container" tabindex="0">
+                        <h2 class="headline">Does Poland remind you of motorbikes?</h2>
+                        <div class="description">High quality vehicles were being sold to Europe
+                            in millions of pieces just a few decades ago! <br>
+                            Have I made you interested?
+                        </div>
+                        <button class="test-your-knowledge" tabindex="0">Test your knowledge!</button>
+                    </div>
+                    <div class="image-container" title="Person standing on a rocky hill with their bike by side." tabindex="0">
+                        <img src="img/BikeTrail.svg" class="bike-vector" alt="Person standing on a rocky hill with their bike by side.">
+                        <!-- $ This image needs to be replaced. -->
+                    </div>
+                    <section>
+                        <div class="social-media">
+                            <button class="toggle-menu" id="toggle-menu">
+                                <i class="fas fa-ellipsis-v social-media-icon" id="menu-icon"></i>
+                            </button>
+                            <a href="https://github.com/Hyziu-03/" class="link" target="_blank"><i class="fab fa-github social-media-icon"></i></a>
+                            <a href="https://www.facebook.com/hyziakszymon/" class="link" target="_blank"><i class="fab fa-facebook social-media-icon"></i></a>
+                            <a href="https://www.instagram.com/szymon_hyziak/" class="link" target="_blank"><i class="fab fa-instagram social-media-icon"></i></a>
+                            <!-- $ These links should be hidden when the menu is collapsed. -->
+                        </div>
+                    </section>
                 </div>
-                <button class="test-your-knowledge" tabindex="0">Test your knowledge!</button>
-                <!-- $ The button's hover, active and focus-visible states should differ.-->
-            </div>
-            <div class="image-container" title="Person standing on a rocky hill with their bike by side." tabindex="0">
-                <img src="img/BikeTrail.svg" class="bike-vector" alt="Person standing on a rocky hill with their bike by side.">
-            </div>
-            <div class="social-media">
-                <button class="toggle-menu" id="toggle-menu">
-                    <i class="fas fa-ellipsis-v social-media-icon" id="menu-icon"></i>
-                </button>
-                <a href="https://github.com/Hyziu-03/" target="_blank"><i class="fab fa-github social-media-icon"></i></a>
-                <a href="https://www.facebook.com/hyziakszymon/" target="_blank"><i class="fab fa-facebook social-media-icon"></i></a>
-                <a href="https://www.instagram.com/szymon_hyziak/" target="_blank"><i class="fab fa-instagram social-media-icon"></i></a>
-                <!-- $ These links should be hidden when the menu is collapsed. -->
-            </div>
-        </div>
-
-        <div class="form">
-            <!-- $ Focus-visible, hover and active states within this div should be implemented. -->
-            <!-- $ This div needs reasonable paddings and margins. -->
-            <h2 class="smaller-headline"><span tabindex="0">But before we begin...</span> &nbsp; <i class="far fa-question-circle" tabindex="0"></i></h2>
-            <div class="inputs-container">
-                <div class="first-input">
-                    <label for="email-input" id="email-label" class="input">Your email is... &emsp;</label>
-                    <input type="email" id="email-input" required>
+            </article>
+            <article>
+                <div class="form">
+                    <!-- $ This div needs reasonable paddings and margins. -->
+                    <h2 class="smaller-headline" tabindex="0">But before we begin... &nbsp; <i class="far fa-question-circle"></i></h2>
+                    <div class="inputs-container">
+                        <div class="first-input">
+                            <label for="email-input" id="email-label" class="input">Your email is... &emsp;</label>
+                            <input type="email" id="email-input" required autocomplete="email">
+                        </div>
+                        <div class="second-input">
+                            <label for="name-input" id="name-label" class="input">And your name is... &emsp;</label>
+                            <input type="text" id="name-input" required autocomplete="name">
+                        </div>
+                    </div>
+                    <button class="take-the-test">Take the test!</button>
                 </div>
-                <div class="second-input">
-                    <label for="name-input" id="name-label" class="input">And your name is... &emsp;</label>
-                    <input type="text" id="name-input" required>
-                </div>
-            </div>
-            <button class="take-the-test">Take the test!</button>
-        </div>
+            </article>
+        </main>
 
         <!--
         <div class="question">
@@ -81,10 +94,9 @@
             <p class="copyright">
                 Thank you for taking part in the quiz. It is upon copyright of Szymon Hyziak.
                 Thanks to Przemysław Gogola for helping me with the questions.
-                <a href="https://www.vecteezy.com/free-vector/bike">Bike Vector by Vecteezy</a>.
             </p>
         </div>
-    -->
+        -->
     </div>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -92,9 +104,8 @@
 
     <script src="https://kit.fontawesome.com/d1ae74e7ee.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <script src="js/animate-menu.js"></script>
     <script src="js/set-equal-input-width.js"></script>
+    <script src="js/detect-scroll.js"></script>
 </body>
-
 </html>
