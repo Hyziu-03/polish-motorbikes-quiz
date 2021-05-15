@@ -1,12 +1,12 @@
+/* ? CSS Reset */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-a {
-    color: inherit;
-}
+/* ? Containers Styling */
 
 html {
     --primary-color: #CCC61D;
@@ -14,13 +14,20 @@ html {
     --secondary-color: #080936;
     --dark-color: #303030;
     --light-color: #CFCFCF;
+    --darkened-light-color: #AEAEAE;
     --tile-border-radius: 12.5px;
 
     font-size: 12px;
     font-family: 'Bitter', serif;
-    color: var(--dark-color);
+    color: var(--dark-color, black);
 
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color, darkblue);
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .container {
@@ -31,10 +38,12 @@ html {
     flex-direction: column;
 }
 
+/* ? Header Styling */
+
 .header {
-    background: var(--primary-color);
-    border: 2.5px solid var(--light-color);
-    border-radius: var(--tile-border-radius);
+    background: var(--primary-color, yellow);
+    border: 2.5px solid var(--light-color, white);
+    border-radius: var(--tile-border-radius), 12.5px;
     padding: 16px 0;
     margin-bottom: 20px;
     user-select: none;
@@ -50,15 +59,6 @@ html {
     align-items: center;
 }
 
-.header:focus-visible,
-.text-container:focus-visible,
-.image-container:focus-visible {
-    background-color: var(--darkened-primary-color);
-    outline: none !important;
-    border-radius: var(--tile-border-radius);
-    border: 2.5px solid var(--secondary-color);
-}
-
 .fa-bicycle {
     font-size: 2.75rem;
 
@@ -70,11 +70,25 @@ html {
     font-weight: bold;
 }
 
+.come-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    z-index: 10;
+    opacity: 0;
+    filter: alpha(opacity=1);
+}
+
+/* ? Landing Page Styling */
+
 .landing-page {
     display: flex;
 
-    border-radius: var(--tile-border-radius);
-    background-color: var(--primary-color);
+    border-radius: var(--tile-border-radius, 12.5px);
+    background-color: var(--primary-color, yellow);
     padding: 24px;
     margin: 90px 0 20px 0;
 }
@@ -92,7 +106,7 @@ html {
     font-weight: 600;
     font-size: 2.25rem;
     text-align: center;
-    color: var(--dark-color);
+    color: var(--dark-color, black);
 
     margin-top: 20px;
 }
@@ -100,16 +114,16 @@ html {
 .description {
     font-size: 1.75rem;
     line-height: 175%;
-    color: var(--dark-color);
+    color: var(--dark-color, black);
 
     margin: 20px 40px 10px 40px;
 }
 
 .test-your-knowledge,
 .take-the-test {
-    background: var(--dark-color);
+    background: var(--dark-color, black);
     box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
-    border-radius: var(--tile-border-radius);
+    border-radius: var(--tile-border-radius, 12.5px);
     padding: 8px 16px;
     transition: .5s all ease;
     user-select: none;
@@ -120,21 +134,11 @@ html {
     font-size: 2.25rem;
     line-height: 125%;
     font-family: 'Bitter', sans-serif;
-    color: var(--light-color);
+    color: var(--light-color, white);
 }
 
 .take-the-test {
     width: 20vw;
-}
-
-.test-your-knowledge:hover,
-.test-your-knowledge:focus-visible,
-.take-the-test:hover,
-.take-the-test:focus-visible {
-    box-shadow: 7.5px 7.5px 0 rgba(48, 48, 48, .75);
-    cursor: pointer;
-    outline: none;
-    border: 5px solid var(--light-color);
 }
 
 .image-container {
@@ -147,11 +151,11 @@ html {
 .bike-vector {
     height: auto;
     width: 400px;
-    border-radius: var(--tile-border-radius);
+    border-radius: var(--tile-border-radius, 12.5px);
     pointer-events: none;
 
     font-family: 'Bitter', serif;
-    color: var(--dark-color);
+    color: var(--dark-color, black);
     font-size: 1.5rem;
     line-height: 1.75rem;
     text-align: center;
@@ -163,7 +167,7 @@ html {
 
     height: min-content;
     padding: 16px;
-    border-radius: var(--tile-border-radius);
+    border-radius: var(--tile-border-radius, 12.5px);
 }
 
 .social-media-icon {
@@ -175,20 +179,12 @@ html {
     width: 3.5rem;
     height: 3.5rem;
     margin-bottom: 20px;
-    border-radius: var(--tile-border-radius);
+    border-radius: var(--tile-border-radius, 12.5px);
     border: 2.5px solid transparent;
     transition: .5s all ease;
     box-shadow: 2.5px 2.5px 0 rgba(48, 48, 48, .75);
 
     font-size: 1.75rem;
-}
-
-.toggle-menu:hover,
-.toggle-menu:focus-visible {
-    box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
-    cursor: pointer;
-    outline: none;
-    border: 2.5px solid var(--secondary-color);
 }
 
 .fab {
@@ -201,14 +197,11 @@ html {
     font-size: 2rem;
 }
 
-.fab:hover {
-    border: 5px solid var(--darkened-primary-color);
-    background-color: var(--darkened-primary-color);
-}
+/* ? Form Styling */
 
 .form {
-    background-color: var(--primary-color);
-    border-radius: var(--tile-border-radius);
+    background-color: var(--primary-color, yellow);
+    border-radius: var(--tile-border-radius, 12.5px);
 
     display: flex;
     flex-direction: column;
@@ -221,9 +214,10 @@ html {
 .form::after {
     content: "";
     position: absolute;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color, darkblue);
     border-radius: 50%;
     padding: 7.5vw;
+    overflow: hidden;
 }
 
 .form::before {
@@ -242,7 +236,8 @@ html {
     line-height: 2.75rem;
     text-align: center;
 
-    padding: 25px 0;
+    padding: 25px;
+    border: 2.5px solid transparent;
 }
 
 .inputs-container {
@@ -265,11 +260,73 @@ html {
 
 #email-input,
 #name-input {
-    border: 2.5px solid var(--dark-color);
-    background-color: var(--light-color);
-    border-radius: calc(var(--tile-border-radius) * 1.5);
+    border: 2.5px solid var(--dark-color, black);
+    background-color: var(--light-color, white);
+    border-radius: calc(var(--tile-border-radius) * 1.5, 12.5px);
     padding: 0.75rem 10px;
     font-family: 'Bitter', serif;
 }
 
-/* $ This file needs to be reorganized and the code needs to become accessible. */
+/* ? Accessibility Styling */
+
+.header:focus-visible,
+.header:hover,
+.text-container:focus-visible,
+.image-container:focus-visible {
+    background-color: var(--darkened-primary-color, gold);
+    outline: none !important;
+    border-radius: var(--tile-border-radius, 12.5px);
+    border: 2.5px solid var(--secondary-color, darkblue);
+}
+
+.test-your-knowledge:hover,
+.test-your-knowledge:focus-visible,
+.take-the-test:hover,
+.take-the-test:focus-visible {
+    box-shadow: 7.5px 7.5px 0 rgba(48, 48, 48, .75);
+    cursor: pointer;
+    outline: none;
+    border: 5px solid var(--light-color, white);
+}
+
+.test-your-knowledge:active,
+.take-the-test:active {
+    background-color: #000000;
+}
+
+.toggle-menu:hover,
+.toggle-menu:focus-visible {
+    box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
+    cursor: pointer;
+    outline: none;
+    border: 2.5px solid var(--secondary-color, darkblue);
+}
+
+.smaller-headline:focus-visible {
+    background-color: var(--darkened-primary-color, gold);
+    outline: none !important;
+    border-radius: var(--tile-border-radius, 12.5px);
+    border: 2.5px solid var(--secondary-color, darkblue);
+}
+
+#email-input:hover,
+#name-input:hover {
+    background-color: var(--darkened-light-color, gray);
+}
+
+#email-input:focus,
+#name-input:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 2.5px var(--darkened-primary-color, gold);
+}
+
+.fab:hover {
+    border: 5px solid var(--darkened-primary-color, gold);
+    background-color: var(--darkened-primary-color, gold);
+}
+
+/* ? Additional Styling */
+
+.link {
+    color: inherit;
+}
