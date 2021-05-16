@@ -1,5 +1,6 @@
 // ? Handlers.
 var socialMediaIcons = document.getElementsByClassName('fab');
+var menuOptions = document.getElementsByClassName('menu-option');
 var menuButton = document.getElementById('toggle-menu');
 var icon = document.getElementById('menu-icon');
 icon.style.transition = ".5s all ease";
@@ -14,20 +15,18 @@ setTransition();
 function hideIcons() {
     for(var i = 0; i < 3; i++) {
         socialMediaIcons[i].style.opacity = "0";
-    }
-    for (var i = 0; i < 3; i++) {
-        socialMediaIcons[i].style.cursor = "";
+        menuOptions[i].removeAttribute('href');
     }
 }
+hideIcons();
 function showIcons() {
     for(var i = 0; i < 3; i++) {
         socialMediaIcons[i].style.opacity = "1";
     }
-    for (var i = 0; i < 3; i++) {
-        socialMediaIcons[i].style.cursor = "pointer";
-    }
+    menuOptions[0].setAttribute('href', 'https://github.com/Hyziu-03/');
+    menuOptions[1].setAttribute('href', 'https://www.facebook.com/hyziakszymon/');
+    menuOptions[2].setAttribute('href', 'https://www.instagram.com/szymon_hyziak/');
 }
-// $ Links shouldn't be reachable when the menu is collapsed.
 
 // ? Click listener.
 var rotated = false;
