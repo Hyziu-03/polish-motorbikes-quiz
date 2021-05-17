@@ -28,11 +28,15 @@ html {
 html,
 body {
     max-width: 100%;
+    /* $ Occupy the whole screen at maximum. */
+
     overflow-x: hidden;
 }
 
 .container {
     width: 97.5vw;
+    /* $ Occupy the whole screen. */
+
     margin: 0 auto;
 
     display: flex;
@@ -51,6 +55,8 @@ body {
     position: fixed;
     top: 0;
     width: 97.5vw;
+    /* $ Occupy the whole screen. */
+
     z-index: 100;
 
     text-align: center;
@@ -97,6 +103,8 @@ body {
 
 .text-container {
     width: calc(97.5vw / 2);
+    /* $ Occupy half of the screen. */
+
     border: 2.5px solid transparent;
 
     display: flex;
@@ -151,6 +159,7 @@ body {
 
 .image-container {
     width: calc(97.5vw / 2);
+    /* $ Occupy half of the screen. */
 
     display: grid;
     place-items: center;
@@ -318,6 +327,7 @@ body {
     line-height: 2rem;
 
     width: calc(97.5vw / 2);
+    /* $ Occupy half of the screen. */
 }
 
 .option {
@@ -333,13 +343,10 @@ body {
 
 .question-image-container {
     width: calc(97.5vw / 2);
+    /* $ Occupy half of the screen. */
+
     display: grid;
     place-items: center;
-}
-
-.question-one {
-    height: auto;
-    width: 100px;
 }
 
 /* ? Accessibility Styling */
