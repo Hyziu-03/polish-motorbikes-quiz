@@ -22,6 +22,7 @@ html {
     color: var(--dark-color, black);
 
     background-color: var(--secondary-color, darkblue);
+    scroll-behavior: smooth;
 }
 
 html,
@@ -125,7 +126,6 @@ body {
     background: var(--dark-color, black);
     box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
     border-radius: var(--tile-border-radius, 12.5px);
-    padding: 8px 16px;
     transition: .5s all ease;
     user-select: none;
     border: 5px solid transparent;
@@ -140,6 +140,13 @@ body {
 
 .take-the-test {
     width: 20vw;
+    padding: 5px 16px;
+}
+
+.scroll-down {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
 }
 
 .image-container {
@@ -277,6 +284,62 @@ body {
     border-radius: calc(var(--tile-border-radius, 12.5px) * 1.5);
     padding: 0.75rem 10px;
     font-family: 'Bitter', serif;
+}
+
+/* ? Question Styling. */
+
+.question-container {
+    margin-top: 20px;
+    background-color: var(--primary-color, yellow);
+    border-radius: var(--tile-border-radius, 12.5px);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 125%;
+    text-align: center;
+    padding: 24px 0;
+}
+
+.question-content {
+    display: flex;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 1.75rem;
+    line-height: 2rem;
+
+    width: calc(97.5vw / 2);
+}
+
+.option {
+    margin: 12px 0 12px calc(97.5vw / 6);
+}
+
+.radio-button {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    margin: 0 12px;
+}
+
+.question-image-container {
+    width: calc(97.5vw / 2);
+    display: grid;
+    place-items: center;
+}
+
+.question-one {
+    height: auto;
+    width: 100px;
 }
 
 /* ? Accessibility Styling */
