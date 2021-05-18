@@ -16,31 +16,14 @@ html {
     --light-color: #CFCFCF;
     --darkened-light-color: #AEAEAE;
     --tile-border-radius: 12.5px;
-
     font-size: 12px;
-    font-family: 'Bitter', serif;
     color: var(--dark-color, black);
-
-    background-color: var(--secondary-color, darkblue);
     scroll-behavior: smooth;
 }
 
-html,
-body {
-    max-width: 100%;
-    /* $ Occupy the whole screen at maximum. */
-
-    overflow-x: hidden;
-}
-
-.container {
-    width: 97.5vw;
-    /* $ Occupy the whole screen. */
-
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
+#webpage {
+    font-family: 'Bitter', serif;
+    background-color: var(--secondary-color, darkblue);
 }
 
 /* ? Header Styling */
@@ -49,19 +32,14 @@ body {
     background: var(--primary-color, yellow);
     border: 2.5px solid var(--light-color, white);
     border-radius: var(--tile-border-radius, 12.5px);
-    padding: 16px 0;
-    margin-bottom: 20px;
+    padding: 24px 0 16px 0;
     user-select: none;
     position: fixed;
     top: 0;
-    width: 97.5vw;
-    /* $ Occupy the whole screen. */
-
+    left: 0;
     z-index: 100;
-
     text-align: center;
     font-weight: bold;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,12 +47,11 @@ body {
 
 .fa-bicycle {
     font-size: 2.75rem;
-
-    margin: 0 10px;
+    margin: 0 8px;
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: bold;
 }
 
@@ -94,22 +71,22 @@ body {
 
 .landing-page {
     display: flex;
-
     border-radius: var(--tile-border-radius, 12.5px);
     background-color: var(--primary-color, yellow);
     padding: 24px;
-    margin: 90px 0 20px 0;
+    margin: 96px 0 16px 0;
 }
 
 .text-container {
-    width: calc(97.5vw / 2);
-    /* $ Occupy half of the screen. */
-
     border: 2.5px solid transparent;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+}
+
+.landing-page-item {
+    margin: 12px 0;
 }
 
 .headline {
@@ -117,16 +94,13 @@ body {
     font-size: 2.25rem;
     text-align: center;
     color: var(--dark-color, black);
-
-    margin-top: 20px;
 }
 
 .description {
     font-size: 1.75rem;
     line-height: 175%;
     color: var(--dark-color, black);
-
-    margin: 20px 40px 10px 40px;
+    text-align: justify;
 }
 
 .test-your-knowledge,
@@ -137,9 +111,7 @@ body {
     transition: .5s all ease;
     user-select: none;
     border: 5px solid transparent;
-    margin: 10px 15% 20px 15%;
-    width: 70%;
-
+    padding: 2px 8px;
     font-size: 2.25rem;
     line-height: 125%;
     font-family: 'Bitter', sans-serif;
@@ -147,20 +119,17 @@ body {
 }
 
 .take-the-test {
-    width: 20vw;
-    padding: 5px 16px;
+    padding: 8px 16px;
 }
 
-.scroll-down {
+#scroll-down {
     display: block;
     padding: 8px 16px;
     text-decoration: none;
+    color: var(--light-color, white);
 }
 
 .image-container {
-    width: calc(97.5vw / 2);
-    /* $ Occupy half of the screen. */
-
     display: grid;
     place-items: center;
 }
@@ -170,7 +139,6 @@ body {
     width: 300px;
     border-radius: var(--tile-border-radius, 12.5px);
     pointer-events: none;
-
     font-family: 'Bitter', serif;
     color: var(--dark-color, black);
     font-size: 1.5rem;
@@ -181,7 +149,6 @@ body {
 .social-media {
     display: flex;
     flex-direction: column;
-
     height: min-content;
     padding: 16px;
     border-radius: var(--tile-border-radius, 12.5px);
@@ -195,12 +162,11 @@ body {
     border-radius: 50%;
     width: 3.5rem;
     height: 3.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     border-radius: var(--tile-border-radius, 12.5px);
     border: 2.5px solid transparent;
     transition: .5s all ease;
     box-shadow: 2.5px 2.5px 0 rgba(48, 48, 48, .75);
-
     font-size: 1.75rem;
 }
 
@@ -209,12 +175,10 @@ body {
 }
 
 .fab {
-    margin: 15px 0;
     opacity: 0;
     border: 5px solid transparent;
     border-radius: 50%;
-    padding: 5px;
-
+    padding: 8px;
     font-size: 2rem;
 }
 
@@ -223,11 +187,9 @@ body {
 .form {
     background-color: var(--primary-color, yellow);
     border-radius: var(--tile-border-radius, 12.5px);
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     position: relative;
 }
 
@@ -237,7 +199,7 @@ body {
     position: absolute;
     background-color: var(--secondary-color, darkblue);
     border-radius: 50%;
-    padding: 7.5vw;
+    padding: 32px;
     overflow: hidden;
 }
 
@@ -258,9 +220,8 @@ body {
     text-align: center;
     text-decoration: underline;
     text-underline-offset: .25rem;
-
     user-select: none;
-    padding: 25px;
+    padding: 24px;
     border: 2.5px solid transparent;
 }
 
@@ -271,12 +232,13 @@ body {
 .inputs-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    /* margin-bottom: 16px; */
 }
 
 .first-input,
 .second-input {
-    margin: 5px 0;
+    /* margin: 8px 0; */
+    visibility: visible;
 }
 
 .input {
@@ -291,17 +253,16 @@ body {
     border: 2.5px solid var(--dark-color, black);
     background-color: var(--light-color, white);
     border-radius: calc(var(--tile-border-radius, 12.5px) * 1.5);
-    padding: 0.75rem 10px;
+    padding: 0.75rem 8px;
     font-family: 'Bitter', serif;
 }
 
 /* ? Question Styling. */
 
 .question-container {
-    margin-top: 20px;
+    /* margin-top: 24px; */
     background-color: var(--primary-color, yellow);
     border-radius: var(--tile-border-radius, 12.5px);
-    
     display: flex;
     flex-direction: column;
 }
@@ -322,29 +283,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     font-size: 1.75rem;
     line-height: 2rem;
-
-    width: calc(97.5vw / 2);
-    /* $ Occupy half of the screen. */
 }
 
 .option {
-    margin: 12px 0 12px calc(97.5vw / 6);
+    /* margin: 12px 0 12px calc(97.5vw / 6); */
+    visibility: visible;
 }
 
 .radio-button {
     width: 2rem;
     height: 2rem;
     vertical-align: middle;
-    margin: 0 12px;
+    /* margin: 0 12px; */
 }
 
 .question-image-container {
-    width: calc(97.5vw / 2);
-    /* $ Occupy half of the screen. */
-
     display: grid;
     place-items: center;
 }
