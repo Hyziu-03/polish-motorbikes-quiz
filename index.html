@@ -37,7 +37,7 @@
         <main>
             <article>
                 <div class="row">
-                    <div class="landing-page col-sm-12">
+                    <div class="landing-page col-xl-12">
                         <div class="text-container col-sm-6" tabindex="0">
                             <h2 class="headline landing-page-item">Does Poland remind you of motorbikes?</h2>
                             <div class="description landing-page-item">
@@ -45,21 +45,22 @@
                                 in millions of pieces just a few decades ago!
                                 Have I made you keen to learn more?
                             </div>
-                            <button class="test-your-knowledge landing-page-item" tabindex="-1">
-                                <a href="#take-the-quiz" class="link" id="scroll-down">Test your knowledge!</a>
+                            <button class="landing-page-item hidden-button" tabindex="-1">
+                                <a href="#take-the-quiz" class="link test-your-knowledge" id="scroll-down">Test your knowledge!</a>
                             </button>
                         </div>
-                        <div class="image-container col-sm-5" title="Illustration of a scooter." tabindex="0">
+                        <div class="image-container col-xl-5 col-md-6" title="Illustration of a scooter." tabindex="0">
                             <img src="img/Scooter.svg" class="bike-vector" alt="Illustration of a scooter.">
                         </div>
                         <section>
-                            <div class="social-media col-sm-1">
+                            <!-- $ Fix bugs connected with this tile. -->
+                            <div class="social-media col-xl-1">
                                 <button class="toggle-menu" id="toggle-menu" title="Expand or collapse the social media menu.">
                                     <i class="fas fa-ellipsis-v social-media-icon" id="menu-icon"></i>
                                 </button>
-                                <a href="https://github.com/Hyziu-03/" class="link menu-option" target="_blank"><i class="fab fa-github social-media-icon"></i></a>
-                                <a href="https://www.facebook.com/hyziakszymon/" class="link menu-option" target="_blank"><i class="fab fa-facebook social-media-icon"></i></a>
-                                <a href="https://www.instagram.com/szymon_hyziak/" class="link menu-option" target="_blank"><i class="fab fa-instagram social-media-icon"></i></a>
+                                <a href="https://github.com/Hyziu-03/" tabindex="-1" class="link menu-option" target="_blank"><i class="fab fa-github social-media-icon" tabindex="0"></i></a>
+                                <a href="https://www.facebook.com/hyziakszymon/" tabindex="-1" class="link menu-option" target="_blank"><i class="fab fa-facebook social-media-icon" tabindex="0"></i></a>
+                                <a href="https://www.instagram.com/szymon_hyziak/" tabindex="-1" class="link menu-option" target="_blank"><i class="fab fa-instagram social-media-icon" tabindex="0"></i></a>
                             </div>
                         </section>
                     </div>
@@ -67,7 +68,7 @@
             </article>
             <article>
                 <div class="row">
-                    <div class="form" id="take-the-quiz">
+                    <div class="form col-xl-12" id="take-the-quiz">
                         <h2 class="smaller-headline" tabindex="0" title="We need this information to provide you a personalized message when you finish the quiz."> But before we begin... &nbsp; <i class="far fa-question-circle"></i></h2>
                         <div class="inputs-container">
                             <div class="first-input">
@@ -80,32 +81,6 @@
                             </div>
                         </div>
                         <button class="take-the-test">Take the test!</button>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="row">
-                    <div class="question-container">
-                        <h3 class="question">When did Romet celebrate its 50th anniversary?</h3>
-                        <div class="question-content">
-                            <div class="options col-sm-6">
-                                <div class="option">
-                                    <input type="radio" name="answer" class="radio-button"><label for="answer">In the Year 1970.</label>
-                                </div>
-                                <div class="option">
-                                    <input type="radio" name="answer" class="radio-button"><label for="answer">In the Year 1987.</label>
-                                </div>
-                                <div class="option">
-                                    <input type="radio" name="answer" class="radio-button"><label for="answer">In the Year 1974.</label>
-                                </div>
-                                <div class="option">
-                                    <input type="radio" name="answer" class="radio-button"><label for="answer">This never happened.</label>
-                                </div>
-                            </div>
-                            <div class="question-image-container col-sm-6">
-                                <img src="" alt="">
-                            </div>
-                        </div>
                     </div>
                 </div>
             </article>
