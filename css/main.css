@@ -250,6 +250,56 @@ html {
     font-family: 'Bitter', serif;
 }
 
+.question-tile {
+    background-color: var(--primary-color);
+    border-radius: var(--tile-border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-header {
+    font-size: 2.25rem;
+    font-weight: 600;
+    padding: 24px;
+    text-align: center;
+}
+
+.question-content {
+    display: flex;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+}
+
+.answer-label {
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.radio-button {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 12px;
+}
+
+.question-number {
+    font-family: 'Lakki Reddy', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10rem;
+    border-radius: 50%;
+    margin-top: 5rem;
+    overflow: hidden;
+    user-select: none;
+}
+
 /* ? Accessibility Styling */
 
 .header:focus-visible,
@@ -322,14 +372,46 @@ html {
     color: inherit;
 }
 
+/* ? Media Queries */
+
 @media(max-width: 1199px) {
     .social-media {
         display: none;
     }
 }
 
-@media(max-width: 767px) {
-    .image-container {
-        display: none;
+@media(max-width: 768px) {
+    .landing-page {
+        flex-direction: column !important;
+    }
+
+    .text-container {
+        margin-bottom: 36px;
+    }
+}
+
+@media(max-width: 575px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 390px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media(max-width: 350px) {
+    html {
+        font-size: 8px;
+    }
+
+    .bike-vector {
+        width: 250px;
+    }
+
+    .landing-page {
+        margin-top: 84px;
     }
 }
