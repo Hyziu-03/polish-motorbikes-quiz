@@ -68,8 +68,72 @@ var answerPlaceholderTen = document.getElementsByClassName('answer-10');
 
 for (var i = 0; i < 4; i++) {
     if (i < 3) {
-        answerPlaceholderOne[i].innerHTML = answersOne[i] + ',';
+        answerPlaceholderOne[i].innerHTML += answersOne[i] + ',';
     } else {
-        answerPlaceholderOne[i].innerHTML = answersOne[i] + '.';
+        answerPlaceholderOne[i].innerHTML += answersOne[i] + '.';
+    }
+}
+
+for (var i = 0; i < 4; i++) {
+    if (i < 3) {
+        answerPlaceholderTwo[i].innerHTML += answersTwo[i] + ',';
+    } else {
+        answerPlaceholderTwo[i].innerHTML += answersTwo[i] + '.';
+    }
+}
+for (var i = 0; i < 4; i++) {
+    if (i < 3) {
+        answerPlaceholderThree[i].innerHTML += answersThree[i] + ',';
+    } else {
+        answerPlaceholderThree[i].innerHTML += answersThree[i] + '.';
+    }
+}
+for (var i = 0; i < 4; i++) {
+    if (i < 3) {
+        answerPlaceholderFour[i].innerHTML += answersFour[i] + ',';
+    } else {
+        answerPlaceholderFour[i].innerHTML += answersFour[i] + '.';
+    }
+}
+for (var i = 0; i < 4; i++) {
+    if (i < 3) {
+        answerPlaceholderFive[i].innerHTML += answersFive[i] + ',';
+    } else {
+        answerPlaceholderFive[i].innerHTML += answersFive[i] + '.';
+    }
+}
+for (var i = 0; i < 4; i++) {
+    if (i < 3) {
+        answerPlaceholderSix[i].innerHTML += answersSix[i] + ',';
+    } else {
+        answerPlaceholderSix[i].innerHTML += answersSix[i] + '.';
+    }
+}
+for (var i = 0; i < 4; i++) {
+    if (i < 3) {
+        answerPlaceholderSeven[i].innerHTML += answersSeven[i] + ',';
+    } else {
+        answerPlaceholderSeven[i].innerHTML += answersSeven[i] + '.';
+    }
+}
+for (var i = 0; i < 4; i++) {
+    if (i < 3) {
+        answerPlaceholderEight[i].innerHTML += answersEight[i] + ',';
+    } else {
+        answerPlaceholderEight[i].innerHTML += answersEight[i] + '.';
+    }
+}
+for (var i = 0; i < 4; i++) {
+    if (i < 3) {
+        answerPlaceholderNine[i].innerHTML += answersNine[i] + ',';
+    } else {
+        answerPlaceholderNine[i].innerHTML += answersNine[i] + '.';
+    }
+}
+for (var i = 0; i < 4; i++) {
+    if (i < 3) {
+        answerPlaceholderTen[i].innerHTML += answersTen[i] + ',';
+    } else {
+        answerPlaceholderTen[i].innerHTML += answersTen[i] + '.';
     }
 }
