@@ -1,11 +1,19 @@
+// ? Buttons:
 var button = document.getElementById('scroll-down');
+var secondButton = document.getElementById('take-the-test');
+
+// ? Scroll destinations: 
 var form = document.getElementById('take-the-quiz');
-var offset = 96;
-var bodyLocation = document.body.getBoundingClientRect().top;
+var firstQuestionTile = document.getElementById('first-question');
+
+// ? Helpful variables:
+const offset = 96;
+const bodyLocation = document.body.getBoundingClientRect().top;
+
+// ? Scrolling to the form:
 var formLocation = form.getBoundingClientRect().top;
 var formPosition = formLocation - bodyLocation;
 var offsetPosiiton = formPosition - offset;
-
 button.addEventListener('click', function() {
     window.scrollTo({
         top: offsetPosiiton,
@@ -13,12 +21,10 @@ button.addEventListener('click', function() {
     });
 });
 
-var secondButton = document.getElementById('take-the-test');
-var firstQuestionTile = document.getElementById('first-question');
+// ? Scrolling to questions:
 var firstQuestionTileLocation = firstQuestionTile.getBoundingClientRect();
 var firstQuestionTilePosition = firstQuestionTileLocation - bodyLocation;
 var secondOffsetPosition = firstQuestionTilePosition - offset;
-
 secondButton.addEventListener('click', function() {
     window.scrollTo({
         top: secondOffsetPosition,
