@@ -1,9 +1,11 @@
+/* ? Go through this file once again. */
+
 /* ? CSS Reset */
 
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box !important;
+    box-sizing: border-box;
 }
 
 /* ? Containers Styling */
@@ -110,7 +112,7 @@ html {
 }
 
 .test-your-knowledge,
-.take-the-test {
+#take-the-test {
     background: var(--dark-color, black);
     box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
     border-radius: var(--tile-border-radius, 12.5px);
@@ -124,7 +126,7 @@ html {
     color: var(--light-color, white);
 }
 
-.take-the-test {
+#take-the-test {
     padding: 8px 16px;
 }
 
@@ -257,7 +259,7 @@ html {
     flex-direction: column;
     align-items: center;
     margin-bottom: 16px;
-    white-space: nowrap;
+    padding-bottom: 8px;
 }
 
 .question-header {
@@ -280,15 +282,21 @@ html {
 .answer-label {
     font-size: 1.75rem;
     text-align: center;
-    padding: 12px 0;
+    padding: 12px 24px 12px 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border-left: 24px solid black;
+    margin: 5px 0;
+    border-radius: var(--tile-border-radius);
+    background-color: var(--darkened-primary-color, gold);
 }
 
 .radio-button {
     width: 2rem;
     height: 2rem;
     margin: 0 12px;
+    opacity: 0;
 }
 
 .question-number {
@@ -317,8 +325,8 @@ html {
 
 .test-your-knowledge:hover,
 .test-your-knowledge:focus-visible,
-.take-the-test:hover,
-.take-the-test:focus-visible {
+#take-the-test:hover,
+#take-the-test:focus-visible {
     box-shadow: 7.5px 7.5px 0 rgba(48, 48, 48, .75);
     cursor: pointer;
     outline: none;
@@ -326,7 +334,7 @@ html {
 }
 
 .test-your-knowledge:active,
-.take-the-test:active {
+#take-the-test:active {
     background-color: #000000;
 }
 
