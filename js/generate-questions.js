@@ -29,21 +29,16 @@ var answersEight = ['700', 'Ogar', '50-T-1', 'Pony'];
 var answersNine = ['50-Touristic-One', 'It is an ordinary factory indication', 'It does not mean anything important', 'It indicates the wheel size and engine type'];
 var answersTen = ['It is a quality standard', 'It does not mean anything important', 'Central Inspectorate of Human Factors and Ergonomics', 'Central Inspectorate of Energy Technology'];
 
+// ? Functions shuffling the answers: 
 function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
 }
+function shuffleEverything() {
+    shuffle(answersOne); shuffle(answersTwo); shuffle(answersThree); shuffle(answersFour); shuffle(answersFive); shuffle(answersSix); shuffle(answersSeven); shuffle(answersEight); shuffle(answersNine); shuffle(answersTen);
+}
+shuffleEverything();
 
-shuffle(answersOne);
-shuffle(answersTwo);
-shuffle(answersThree);
-shuffle(answersFour);
-shuffle(answersFive);
-shuffle(answersSix);
-shuffle(answersSeven);
-shuffle(answersEight);
-shuffle(answersNine);
-shuffle(answersTen);
-
+// ? Handling headers:
 var headerOne = document.getElementById('question-header-1').innerHTML = questionOne.heading;
 var headerTwo = document.getElementById('question-header-2').innerHTML = questionTwo.heading;
 var headerThree = document.getElementById('question-header-3').innerHTML = questionThree.heading;
@@ -55,6 +50,7 @@ var headerEight = document.getElementById('question-header-8').innerHTML = quest
 var headerNine = document.getElementById('question-header-9').innerHTML = questionNine.heading;
 var headerTen = document.getElementById('question-header-10').innerHTML = questionTen.heading;
 
+// ? Handling answers:
 var answerPlaceholderOne = document.getElementsByClassName('answer-1');
 var answerPlaceholderTwo = document.getElementsByClassName('answer-2');
 var answerPlaceholderThree = document.getElementsByClassName('answer-3');
@@ -66,74 +62,7 @@ var answerPlaceholderEight = document.getElementsByClassName('answer-8');
 var answerPlaceholderNine = document.getElementsByClassName('answer-9');
 var answerPlaceholderTen = document.getElementsByClassName('answer-10');
 
-for (var i = 0; i < 4; i++) {
-    if (i < 3) {
-        answerPlaceholderOne[i].innerHTML += answersOne[i] + ',';
-    } else {
-        answerPlaceholderOne[i].innerHTML += answersOne[i] + '.';
-    }
+function generateAnswers() {
+    for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderOne[i].innerHTML += answersOne[i]; } else { answerPlaceholderOne[i].innerHTML += answersOne[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderTwo[i].innerHTML += answersTwo[i]; } else { answerPlaceholderTwo[i].innerHTML += answersTwo[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderThree[i].innerHTML += answersThree[i]; } else { answerPlaceholderThree[i].innerHTML += answersThree[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderFour[i].innerHTML += answersFour[i]; } else { answerPlaceholderFour[i].innerHTML += answersFour[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderFive[i].innerHTML += answersFive[i]; } else { answerPlaceholderFive[i].innerHTML += answersFive[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderSix[i].innerHTML += answersSix[i]; } else { answerPlaceholderSix[i].innerHTML += answersSix[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderSeven[i].innerHTML += answersSeven[i]; } else { answerPlaceholderSeven[i].innerHTML += answersSeven[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderEight[i].innerHTML += answersEight[i]; } else { answerPlaceholderEight[i].innerHTML += answersEight[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderNine[i].innerHTML += answersNine[i]; } else { answerPlaceholderNine[i].innerHTML += answersNine[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderTen[i].innerHTML += answersTen[i]; } else { answerPlaceholderTen[i].innerHTML += answersTen[i]; } }
 }
-
-for (var i = 0; i < 4; i++) {
-    if (i < 3) {
-        answerPlaceholderTwo[i].innerHTML += answersTwo[i] + ',';
-    } else {
-        answerPlaceholderTwo[i].innerHTML += answersTwo[i] + '.';
-    }
-}
-for (var i = 0; i < 4; i++) {
-    if (i < 3) {
-        answerPlaceholderThree[i].innerHTML += answersThree[i] + ',';
-    } else {
-        answerPlaceholderThree[i].innerHTML += answersThree[i] + '.';
-    }
-}
-for (var i = 0; i < 4; i++) {
-    if (i < 3) {
-        answerPlaceholderFour[i].innerHTML += answersFour[i] + ',';
-    } else {
-        answerPlaceholderFour[i].innerHTML += answersFour[i] + '.';
-    }
-}
-for (var i = 0; i < 4; i++) {
-    if (i < 3) {
-        answerPlaceholderFive[i].innerHTML += answersFive[i] + ',';
-    } else {
-        answerPlaceholderFive[i].innerHTML += answersFive[i] + '.';
-    }
-}
-for (var i = 0; i < 4; i++) {
-    if (i < 3) {
-        answerPlaceholderSix[i].innerHTML += answersSix[i] + ',';
-    } else {
-        answerPlaceholderSix[i].innerHTML += answersSix[i] + '.';
-    }
-}
-for (var i = 0; i < 4; i++) {
-    if (i < 3) {
-        answerPlaceholderSeven[i].innerHTML += answersSeven[i] + ',';
-    } else {
-        answerPlaceholderSeven[i].innerHTML += answersSeven[i] + '.';
-    }
-}
-for (var i = 0; i < 4; i++) {
-    if (i < 3) {
-        answerPlaceholderEight[i].innerHTML += answersEight[i] + ',';
-    } else {
-        answerPlaceholderEight[i].innerHTML += answersEight[i] + '.';
-    }
-}
-for (var i = 0; i < 4; i++) {
-    if (i < 3) {
-        answerPlaceholderNine[i].innerHTML += answersNine[i] + ',';
-    } else {
-        answerPlaceholderNine[i].innerHTML += answersNine[i] + '.';
-    }
-}
-for (var i = 0; i < 4; i++) {
-    if (i < 3) {
-        answerPlaceholderTen[i].innerHTML += answersTen[i] + ',';
-    } else {
-        answerPlaceholderTen[i].innerHTML += answersTen[i] + '.';
-    }
-}
+generateAnswers();
