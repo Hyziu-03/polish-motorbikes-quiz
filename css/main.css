@@ -18,6 +18,7 @@ html {
     --light-color: #CFCFCF;
     --darkened-light-color: #AEAEAE;
     --tile-border-radius: 12.5px;
+    --fill-unit: 8px;
     font-size: 12px;
     color: var(--dark-color, black);
     scroll-behavior: smooth;
@@ -46,7 +47,6 @@ html {
     top: 0;
     left: 0;
     z-index: 100;
-    text-align: center;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -156,7 +156,6 @@ html {
     color: var(--dark-color, black);
     font-size: 1.5rem;
     line-height: 1.75rem;
-    text-align: center;
 }
 
 .social-media {
@@ -190,6 +189,7 @@ html {
     padding: 8px;
     font-size: 2rem;
     border: 2.5px solid transparent;
+    margin: 4px 0;
 }
 
 /* ? Form Styling */
@@ -233,14 +233,12 @@ html {
 .first-input,
 .second-input {
     margin: 4px 0;
-    visibility: visible;
 }
 
 .input {
     font-size: 1.75rem;
     font-weight: 600;
     line-height: 2.25rem;
-    text-align: center;
 }
 
 #email-input,
@@ -281,21 +279,25 @@ html {
 
 .answer-label {
     font-size: 1.75rem;
-    text-align: center;
-    padding: 12px 24px 12px 0;
+    padding: 12px 24px 12px 12px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-left: 24px solid black;
     margin: 5px 0;
     border-radius: var(--tile-border-radius);
     background-color: var(--darkened-primary-color, gold);
 }
 
+.answer-label::before {
+    content: '';
+    background-color: var(--dark-color, black);
+    border-radius: 10px;
+    height: 1.2rem;
+    width: 1.25rem;
+    position: relative;
+    left: -50px;
+}
+
 .radio-button {
-    width: 2rem;
-    height: 2rem;
-    margin: 0 12px;
     opacity: 0;
 }
 
@@ -304,7 +306,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10rem;
+    font-size: 12rem;
     border-radius: 50%;
     margin-top: 5rem;
     overflow: hidden;
@@ -375,6 +377,22 @@ html {
     border: 2.5px solid var(--darkened-primary-color, gold);
     background-color: var(--darkened-primary-color, gold);
     color: var(--dark-color);
+}
+
+.answer-1:focus-visible, 
+.answer-2:focus-visible,
+.answer-3:focus-visible,
+.answer-4:focus-visible,
+.answer-5:focus-visible,
+.answer-6:focus-visible,
+.answer-7:focus-visible,
+.answer-8:focus-visible,
+.answer-9:focus-visible,
+.answer-10:focus-visible {
+    outline: none;
+    background-color: var(--dark-color, black);
+    color: var(--light-color, white);
+    border-radius: calc(var(--tile-border-radius, 12.5px) / 2);
 }
 
 /* ? Additional Styling */
