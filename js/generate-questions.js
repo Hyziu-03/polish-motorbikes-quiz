@@ -8,7 +8,7 @@ class Question {
 // ? Objects of ten questions with the correct answers.
 var questionOne = new Question('When did Romet celebrate its 50th anniversary?', 'In 1974');
 var questionTwo = new Question('How were the canadian Romet bikes called?', 'Tyler');
-var questionThree = new Question("How was the girls Orion called?", 'Turing2');
+var questionThree = new Question("How was the girls' Orion called?", 'Turing2');
 var questionFour = new Question('How were the Romet tandems called?', 'Duet and Derby');
 var questionFive = new Question('What does the abbreviation ZZR mean?', 'United Bike Workshop');
 var questionSix = new Question('How many gears does the Dezamet 019 engine have?', 'Three');
@@ -18,14 +18,14 @@ var questionNine = new Question('What does the abbreviation 50-T-1 mean?', '50-T
 var questionTen = new Question('What does the abbreviaton GIGE-E mean?', 'Central Inspectorate of Energy Technology');
 
 // ? Arrays of answers to the ten questions:
-var answersOne = ['In 1970', 'In 1987', 'In 1974', 'This never happened'];
-var answersTwo = ['Unidal', 'Super Cycle', 'Tyler', 'Universal'];
-var answersThree = ['Just Orion', 'Kalina', 'Sava', 'Turing2'];
+var answersOne = ['In the Year 1970', 'In the Year 1987', 'In the Year 1974', 'This has never happened'];
+var answersTwo = ['Romet Unidal', 'Romet Super Cycle', 'Romet Tyler', 'Romet Universal'];
+var answersThree = ['Romet Orion', 'Romet Kalina', 'Romet Sava', 'Romet Turing2'];
 var answersFour = ['Duet and Zenith', 'Kormoran and Wilga', 'Duet and Derby', 'It was no tandem these days'];
 var answersFive = ['Crazy Cyclist Unity', 'United Bike Workshop', 'It is an ordinary name', 'It is a quality standard '];
-var answersSix = ['Three', 'Four', 'Five', 'It does not matter'];
-var answersSeven = ['Jubilat', 'Kormoran', 'Meteor Sport', 'Wagant'];
-var answersEight = ['700', 'Ogar', '50-T-1', 'Pony'];
+var answersSix = ['Three gears', 'Four gears', 'Five gears', 'It does not matter'];
+var answersSeven = ['Romet Jubilat', 'Romet Kormoran', 'Romet Meteor Sport', 'Romet Wagant'];
+var answersEight = ['The 700 batch', 'The Ogar batch', 'The 50-T-1 batch', 'The Pony batch'];
 var answersNine = ['50-Touristic-One', 'It is an ordinary factory indication', 'It does not mean anything important', 'It indicates the wheel size and engine type'];
 var answersTen = ['It is a quality standard', 'It does not mean anything important', 'Central Inspectorate of Human Factors and Ergonomics', 'Central Inspectorate of Energy Technology'];
 
