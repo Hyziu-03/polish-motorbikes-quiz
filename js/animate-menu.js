@@ -15,6 +15,7 @@ setTransition();
 function hideIcons() {
     for(var i = 0; i < 3; i++) {
         socialMediaIcons[i].style.opacity = "0";
+        socialMediaIcons[i].removeAttribute('tabindex');
         menuOptions[i].removeAttribute('href');
     }
 }
@@ -22,6 +23,7 @@ hideIcons();
 function showIcons() {
     for(var i = 0; i < 3; i++) {
         socialMediaIcons[i].style.opacity = "1";
+        socialMediaIcons[i].setAttribute('tabindex', '0');
     }
     menuOptions[0].setAttribute('href', 'https://github.com/Hyziu-03/');
     menuOptions[1].setAttribute('href', 'https://www.facebook.com/hyziakszymon/');
