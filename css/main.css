@@ -383,9 +383,6 @@ html {
 .answer-9:focus-visible,
 .answer-10:focus-visible {
     outline: none;
-    background-color: var(--dark-color, black);
-    color: var(--light-color, white);
-    border-radius: calc(var(--tile-border-radius, 12.5px) / 2);
 }
 
 /* ? Additional Styling */
@@ -409,6 +406,10 @@ html {
 
     .text-container {
         margin-bottom: 36px;
+    }
+
+    .question-number {
+        display: none;
     }
 }
 
