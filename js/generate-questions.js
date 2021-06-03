@@ -6,7 +6,7 @@ class Question {
 }
 
 var questionsHTML = document.getElementById('questions');
-questionsHTML.innerHTML = '<article> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-1"></h1> <div style="display: flex;" class="col-xl-6"> <div class="question-content col-xl-6"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-1" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-1" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-1" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-1" tabindex="0"></span> </label> </div> </div> <div class="question-number col-xl-6">1</div> </div> </div> </div> </article> <article> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-2"></h1> <div style="display: flex;" class="col-xl-6"> <div class="question-content col-xl-6"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-2" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-2" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-2" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-2" tabindex="0"></span> </label> </div> </div> <div class="question-number col-xl-6">2</div> </div> </div> </div> </article> <article> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-3"></h1> <div style="display: flex;" class="col-xl-6"> <div class="question-content col-xl-6"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-3" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-3" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-3" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-3" tabindex="0"></span> </label> </div> </div> <div class="question-number col-xl-6">3</div> </div> </div> </div> </article> <article> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-4"></h1> <div style="display: flex;" class="col-xl-6"> <div class="question-content col-xl-6"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-4" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-4" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-4" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-4" tabindex="0"></span> </label> </div> </div> <div class="question-number col-xl-6">4</div> </div> </div> </div> </article> <article> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-5"></h1> <div style="display: flex;" class="col-xl-6"> <div class="question-content col-xl-6"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-5" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-5" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-5" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-5" tabindex="0"></span> </label> </div> </div> <div class="question-number col-xl-6">5</div> </div> </div> </div> </article> <article> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-6"></h1> <div style="display: flex;" class="col-xl-6"> <div class="question-content col-xl-6"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-6" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-6" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-6" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-6" tabindex="0"></span> </label> </div> </div> <div class="question-number col-xl-6">6</div> </div> </div> </div> </article> <article> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-7"></h1> <div style="display: flex;" class="col-xl-6"> <div class="question-content col-xl-6"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-7" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-7" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-7" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-7" tabindex="0"></span> </label> </div> </div> <div class="question-number col-xl-6">7</div> </div> </div> </div> </article> <article> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-8"></h1> <div style="display: flex;" class="col-xl-6"> <div class="question-content col-xl-6"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-8" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-8" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-8" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-8" tabindex="0"></span> </label> </div> </div> <div class="question-number col-xl-6">8</div> </div> </div> </div> </article> <article> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-9"></h1> <div style="display: flex;" class="col-xl-6"> <div class="question-content col-xl-6"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-9" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-9" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-9" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-9" tabindex="0"></span> </label> </div> </div> <div class="question-number col-xl-6">9</div> </div> </div> </div> </article> <article> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-10"></h1> <div style="display: flex;" class="col-xl-6"> <div class="question-content col-xl-6"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-10" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-10" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-10" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-10" tabindex="0"></span> </label> </div> </div> <div class="question-number col-xl-6">10</div> </div> </div> </div> </article>';
+questionsHTML.innerHTML = '<section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-1"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-1" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-1" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-1" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-1" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">&nbsp;1</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-2"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-2" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-2" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-2" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-2" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">2</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-3"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-3" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-3" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-3" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-3" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">3</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-4"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-4" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-4" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-4" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-4" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">&nbsp;4</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-5"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-5" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-5" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-5" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-5" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">5</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-6"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-6" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-6" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-6" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-6" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">6</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-7"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-7" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-7" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-7" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-7" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">7</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-8"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-8" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-8" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-8" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-8" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">8</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-9"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-9" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-9" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-9" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-9" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">&nbsp;9</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-10"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-10" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-10" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-10" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-10" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">&nbsp;&nbsp;10</div> </div> </div> </div> </section>';
 
 // ? Objects of ten questions with the correct answers.
 var questionOne = new Question('When did Romet celebrate its 50th anniversary?', 'In 1974');
@@ -37,7 +37,16 @@ function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
 }
 function shuffleEverything() {
-    shuffle(answersOne); shuffle(answersTwo); shuffle(answersThree); shuffle(answersFour); shuffle(answersFive); shuffle(answersSix); shuffle(answersSeven); shuffle(answersEight); shuffle(answersNine); shuffle(answersTen);
+    shuffle(answersOne);
+    shuffle(answersTwo);
+    shuffle(answersThree);
+    shuffle(answersFour);
+    shuffle(answersFive);
+    shuffle(answersSix);
+    shuffle(answersSeven);
+    shuffle(answersEight);
+    shuffle(answersNine);
+    shuffle(answersTen);
 }
 shuffleEverything();
 
@@ -66,7 +75,76 @@ var answerPlaceholderNine = document.getElementsByClassName('answer-9');
 var answerPlaceholderTen = document.getElementsByClassName('answer-10');
 
 function generateAnswers() {
-    for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderOne[i].innerHTML += answersOne[i]; } else { answerPlaceholderOne[i].innerHTML += answersOne[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderTwo[i].innerHTML += answersTwo[i]; } else { answerPlaceholderTwo[i].innerHTML += answersTwo[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderThree[i].innerHTML += answersThree[i]; } else { answerPlaceholderThree[i].innerHTML += answersThree[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderFour[i].innerHTML += answersFour[i]; } else { answerPlaceholderFour[i].innerHTML += answersFour[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderFive[i].innerHTML += answersFive[i]; } else { answerPlaceholderFive[i].innerHTML += answersFive[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderSix[i].innerHTML += answersSix[i]; } else { answerPlaceholderSix[i].innerHTML += answersSix[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderSeven[i].innerHTML += answersSeven[i]; } else { answerPlaceholderSeven[i].innerHTML += answersSeven[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderEight[i].innerHTML += answersEight[i]; } else { answerPlaceholderEight[i].innerHTML += answersEight[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderNine[i].innerHTML += answersNine[i]; } else { answerPlaceholderNine[i].innerHTML += answersNine[i]; } } for (var i = 0; i < 4; i++) { if (i < 3) { answerPlaceholderTen[i].innerHTML += answersTen[i]; } else { answerPlaceholderTen[i].innerHTML += answersTen[i]; } }
+    for (var i = 0; i < 4; i++) {
+        if (i < 3) {
+            answerPlaceholderOne[i].innerHTML += answersOne[i];
+        } else {
+            answerPlaceholderOne[i].innerHTML += answersOne[i];
+        }
+    }
+    for (var i = 0; i < 4; i++) {
+        if (i < 3) {
+            answerPlaceholderTwo[i].innerHTML += answersTwo[i];
+        } else {
+            answerPlaceholderTwo[i].innerHTML += answersTwo[i];
+        }
+    }
+    for (var i = 0; i < 4; i++) {
+        if (i < 3) {
+            answerPlaceholderThree[i].innerHTML += answersThree[i];
+        } else {
+            answerPlaceholderThree[i].innerHTML += answersThree[i];
+        }
+    }
+    for (var i = 0; i < 4; i++) {
+        if (i < 3) {
+            answerPlaceholderFour[i].innerHTML += answersFour[i];
+        } else {
+            answerPlaceholderFour[i].innerHTML += answersFour[i];
+        }
+    }
+    for (var i = 0; i < 4; i++) {
+        if (i < 3) {
+            answerPlaceholderFive[i].innerHTML += answersFive[i];
+        } else {
+            answerPlaceholderFive[i].innerHTML += answersFive[i];
+        }
+    }
+    for (var i = 0; i < 4; i++) {
+        if (i < 3) {
+            answerPlaceholderSix[i].innerHTML += answersSix[i];
+        } else {
+            answerPlaceholderSix[i].innerHTML += answersSix[i];
+        }
+    }
+    for (var i = 0; i < 4; i++) {
+        if (i < 3) {
+            answerPlaceholderSeven[i].innerHTML += answersSeven[i];
+        } else {
+            answerPlaceholderSeven[i].innerHTML += answersSeven[i];
+        }
+    }
+    for (var i = 0; i < 4; i++) {
+        if (i < 3) {
+            answerPlaceholderEight[i].innerHTML += answersEight[i];
+        } else {
+            answerPlaceholderEight[i].innerHTML += answersEight[i];
+        }
+    }
+    for (var i = 0; i < 4; i++) {
+        if (i < 3) {
+            answerPlaceholderNine[i].innerHTML += answersNine[i];
+        } else {
+            answerPlaceholderNine[i].innerHTML += answersNine[i];
+        }
+    }
+    for (var i = 0; i < 4; i++) {
+        if (i < 3) {
+            answerPlaceholderTen[i].innerHTML += answersTen[i];
+        } else {
+            answerPlaceholderTen[i].innerHTML += answersTen[i];
+        }
+    }
 }
 generateAnswers();
 
@@ -84,3 +162,116 @@ function readAnswers() {
     }
 }
 readAnswers();
+
+function setAccessibleFocusStates() {
+    for (var i = 0; i < 4; i++) {
+        answerPlaceholderOne[i].addEventListener('focus', function () {
+            this.parentElement.style.background = '#303030';
+            this.parentElement.style.color = "#CFCFCF";
+        });
+        answerPlaceholderOne[i].addEventListener('blur', function () {
+            this.parentElement.style.background = '';
+            this.parentElement.style.color = '';
+        });
+    }
+
+    for (var i = 0; i < 4; i++) {
+        answerPlaceholderTwo[i].addEventListener('focus', function () {
+            this.parentElement.style.background = '#303030';
+            this.parentElement.style.color = "#CFCFCF";
+        });
+        answerPlaceholderTwo[i].addEventListener('blur', function () {
+            this.parentElement.style.background = '';
+            this.parentElement.style.color = '';
+        });
+    }
+
+    for (var i = 0; i < 4; i++) {
+        answerPlaceholderThree[i].addEventListener('focus', function () {
+            this.parentElement.style.background = '#303030';
+            this.parentElement.style.color = "#CFCFCF";
+        });
+        answerPlaceholderThree[i].addEventListener('blur', function () {
+            this.parentElement.style.background = '';
+            this.parentElement.style.color = '';
+        });
+    }
+
+    for (var i = 0; i < 4; i++) {
+        answerPlaceholderFour[i].addEventListener('focus', function () {
+            this.parentElement.style.background = '#303030';
+            this.parentElement.style.color = "#CFCFCF";
+        });
+        answerPlaceholderFour[i].addEventListener('blur', function () {
+            this.parentElement.style.background = '';
+            this.parentElement.style.color = '';
+        });
+    }
+
+    for (var i = 0; i < 4; i++) {
+        answerPlaceholderFive[i].addEventListener('focus', function () {
+            this.parentElement.style.background = '#303030';
+            this.parentElement.style.color = "#CFCFCF";
+        });
+        answerPlaceholderFive[i].addEventListener('blur', function () {
+            this.parentElement.style.background = '';
+            this.parentElement.style.color = '';
+        });
+    }
+
+    for (var i = 0; i < 4; i++) {
+        answerPlaceholderSix[i].addEventListener('focus', function () {
+            this.parentElement.style.background = '#303030';
+            this.parentElement.style.color = "#CFCFCF";
+        });
+        answerPlaceholderSix[i].addEventListener('blur', function () {
+            this.parentElement.style.background = '';
+            this.parentElement.style.color = '';
+        });
+    }
+
+    for (var i = 0; i < 4; i++) {
+        answerPlaceholderSeven[i].addEventListener('focus', function () {
+            this.parentElement.style.background = '#303030';
+            this.parentElement.style.color = "#CFCFCF";
+        });
+        answerPlaceholderSeven[i].addEventListener('blur', function () {
+            this.parentElement.style.background = '';
+            this.parentElement.style.color = '';
+        });
+    }
+
+    for (var i = 0; i < 4; i++) {
+        answerPlaceholderEight[i].addEventListener('focus', function () {
+            this.parentElement.style.background = '#303030';
+            this.parentElement.style.color = "#CFCFCF";
+        });
+        answerPlaceholderEight[i].addEventListener('blur', function () {
+            this.parentElement.style.background = '';
+            this.parentElement.style.color = '';
+        });
+    }
+
+    for (var i = 0; i < 4; i++) {
+        answerPlaceholderNine[i].addEventListener('focus', function () {
+            this.parentElement.style.background = '#303030';
+            this.parentElement.style.color = "#CFCFCF";
+        });
+        answerPlaceholderNine[i].addEventListener('blur', function () {
+            this.parentElement.style.background = '';
+            this.parentElement.style.color = '';
+        });
+    }
+
+    for (var i = 0; i < 4; i++) {
+        answerPlaceholderTen[i].addEventListener('focus', function () {
+            this.parentElement.style.background = '#303030';
+            this.parentElement.style.color = "#CFCFCF";
+        });
+        answerPlaceholderTen[i].addEventListener('blur', function () {
+            this.parentElement.style.background = '';
+            this.parentElement.style.color = '';
+        });
+    }
+}
+setAccessibleFocusStates();
