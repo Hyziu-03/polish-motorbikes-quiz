@@ -246,6 +246,7 @@ html {
     border-radius: calc(var(--tile-border-radius, 12.5px) * 1.5);
     padding: 0.75rem 8px;
     font-family: 'Bitter', serif;
+    transition: .5s all ease;
 }
 
 .question-tile {
@@ -283,10 +284,13 @@ html {
     margin: 5px 0;
     border-radius: var(--tile-border-radius);
     background-color: var(--darkened-primary-color, gold);
+    transition: .5s all ease;
+    border: 2.5px solid transparent;
 }
 
 .answer-label:hover {
     box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
+    border: 2.5px solid var(--dark-color, darkgrey);
     cursor: pointer;
 }
 
