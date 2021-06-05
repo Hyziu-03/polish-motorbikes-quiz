@@ -5,18 +5,20 @@ class Question {
     }
 }
 
+var points = 0;
+
 var questionsHTML = document.getElementById('questions');
 questionsHTML.innerHTML = '<section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-1"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-1" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-1" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-1" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-1" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">&nbsp;1</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-2"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-2" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-2" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-2" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-2" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">2</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-3"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-3" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-3" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-3" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-3" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">3</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-4"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-4" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-4" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-4" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-4" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">&nbsp;4</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-5"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-5" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-5" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-5" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-5" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">5</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-6"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-6" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-6" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-6" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-6" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">6</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-7"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-7" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-7" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-7" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-7" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">7</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-8"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-8" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-8" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-8" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-8" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">8</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-9"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-9" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-9" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-9" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-9" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">&nbsp;9</div> </div> </div> </div> </section> <section> <div class="row"> <div class="question-tile col-xl-12"> <h1 tabindex="0" class="question-header" id="question-header-10"></h1> <div style="display: flex;" class=" col-md-6"> <div class="question-content col-md-9"> <div class="answers"> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-10" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-10" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-10" tabindex="0"></span> </label> <label class="answer-label"> <input type="radio" tabindex="-1" class="radio-button" name="answer"> <span class="answer-10" tabindex="0"></span> </label> </div> </div> <div class="question-number col-md-3">&nbsp;&nbsp;10</div> </div> </div> </div> </section>';
 
 // ? Objects of ten questions with the correct answers.
-var questionOne = new Question('When did Romet celebrate its 50th anniversary?', 'In 1974');
-var questionTwo = new Question('How were the canadian Romet bikes called?', 'Tyler');
-var questionThree = new Question("How was the girls' Orion called?", 'Turing2');
+var questionOne = new Question('When did Romet celebrate its 50th anniversary?', 'In the Year 1974');
+var questionTwo = new Question('How were the canadian Romet bikes called?', 'Romet Tyler');
+var questionThree = new Question("How was the girls' Orion called?", 'Romet Turing2');
 var questionFour = new Question('How were the Romet tandems called?', 'Duet and Derby');
 var questionFive = new Question('What does the abbreviation ZZR mean?', 'United Bike Workshop');
-var questionSix = new Question('How many gears does the Dezamet 019 engine have?', 'Three');
-var questionSeven = new Question('Which bike is Pasat an updated design of?', 'Wagant');
-var questionEight = new Question('What other batch is the limited Romet Polo M760 batch based on?', '700');
+var questionSix = new Question('How many gears does the Dezamet 019 engine have?', 'Three gears');
+var questionSeven = new Question('Which bike is Pasat an updated design of?', 'Romet Wagant');
+var questionEight = new Question('What other batch is the limited Romet Polo M760 batch based on?', 'The 700 batch');
 var questionNine = new Question('What does the abbreviation 50-T-1 mean?', '50-Touristic-One');
 var questionTen = new Question('What does the abbreviaton GIGE-E mean?', 'Central Inspectorate of Energy Technology');
 
@@ -158,6 +160,74 @@ function readAnswers() {
             selectedRadioButton.checked = true;
             this.style.background = "#080936";
             this.style.color = "#CFCFCF";
+            this.parentElement.style.pointerEvents = "none";
+
+            // ? Checking whether the answer is correct or not.
+            switch(this.childNodes[3].className) {
+                case 'answer-1':
+                    if(this.childNodes[3].innerHTML == questionOne.correctAnswer) {
+                        points++;
+                    }
+                break;
+
+                case 'answer-2':
+                    if (this.childNodes[3].innerHTML == questionTwo.correctAnswer) {
+                        points++;
+                    }
+                break;
+
+                case 'answer-3':
+                    if (this.childNodes[3].innerHTML == questionThree.correctAnswer) {
+                        points++;
+                    }
+                break;
+
+                case 'answer-4':
+                    if (this.childNodes[3].innerHTML == questionFour.correctAnswer) {
+                        points++;
+                    }
+                break;
+
+                case 'answer-5':
+                    if (this.childNodes[3].innerHTML == questionFive.correctAnswer) {
+                        points++;
+                    }
+                break;
+
+                case 'answer-6':
+                    if (this.childNodes[3].innerHTML == questionSix.correctAnswer) {
+                        points++;
+                    }
+                break;
+
+                case 'answer-7':
+                    if (this.childNodes[3].innerHTML == questionSeven.correctAnswer) {
+                        points++;
+                    }
+                break;
+
+                case 'answer-8':
+                    if (this.childNodes[3].innerHTML == questionEight.correctAnswer) {
+                        points++;
+                    }
+                break;
+
+                case 'answer-9':
+                    if (this.childNodes[3].innerHTML == questionNine.correctAnswer) {
+                        points++;
+                    }
+                break;
+
+                case 'answer-10':
+                    if (this.childNodes[3].innerHTML == questionTen.correctAnswer) {
+                        points++;
+                    }
+                break;
+
+                default:
+                    console.log('Something went wrong.');
+                break;
+            }
         });
     }
 }
