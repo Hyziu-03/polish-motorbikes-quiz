@@ -1,5 +1,3 @@
-/* ? CSS Reset */
-
 * {
     padding: 0;
     margin: 0;
@@ -17,8 +15,9 @@ html {
     --darkened-light-color: #AEAEAE;
     --tile-border-radius: 12.5px;
     --fill-unit: 8px;
+
     font-size: 12px;
-    color: var(--dark-color, black);
+    color: var(--dark-color);
     scroll-behavior: smooth;
 }
 
@@ -30,15 +29,15 @@ html {
 
 #webpage {
     font-family: 'Bitter', serif;
-    background-color: var(--secondary-color, darkblue);
+    background-color: var(--secondary-color);
 }
 
 /* ? Header Styling */
 
 .header {
-    background: var(--primary-color, yellow);
-    border: 2.5px solid var(--light-color, white);
-    border-radius: var(--tile-border-radius, 12.5px);
+    background: var(--primary-color);
+    border: 2.5px solid var(--light-color);
+    border-radius: var(--tile-border-radius);
     padding: 24px 0 16px 0;
     user-select: none;
     position: fixed;
@@ -53,7 +52,7 @@ html {
 
 .fa-bicycle {
     font-size: 2.75rem;
-    margin: 0 8px;
+    margin: 0 var(--fill-unit);
 }
 
 .title {
@@ -77,10 +76,12 @@ html {
 
 .landing-page {
     display: flex;
-    border-radius: var(--tile-border-radius, 12.5px);
-    background-color: var(--primary-color, yellow);
-    padding: 24px;
-    margin: 96px 0 16px 0;
+    border-radius: var(--tile-border-radius);
+    background-color: var(--primary-color);
+    padding: calc(3 * var(--fill-unit));
+    margin-top: calc(8 * var(--fill-unit));
+    /* $ Top margin is not set properly. */
+    margin-bottom: calc(2 * var(--fill-unit));
 }
 
 .text-container {
@@ -92,52 +93,52 @@ html {
 }
 
 .landing-page-item {
-    margin: 12px 0;
+    margin: calc(1.5 * var(--fill-unit)) 0;
 }
 
 .headline {
     font-weight: 600;
     font-size: 2.25rem;
     text-align: center;
-    color: var(--dark-color, black);
+    color: var(--dark-color);
 }
 
 .description {
     font-size: 1.75rem;
     line-height: 175%;
-    color: var(--dark-color, black);
+    color: var(--dark-color);
     text-align: justify;
 }
 
 .test-your-knowledge,
 #take-the-test {
-    background: var(--dark-color, black);
+    background: var(--dark-color);
     box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
-    border-radius: var(--tile-border-radius, 12.5px);
+    border-radius: var(--tile-border-radius);
     transition: .5s all ease;
     user-select: none;
     border: 5px solid transparent;
-    padding: 2px 8px;
+    padding: calc(0.25 * var(--fill-unit)) calc(2 * var(--fill-unit));
     font-size: 2.25rem;
     line-height: 125%;
     font-family: 'Bitter', sans-serif;
-    color: var(--light-color, white);
+    color: var(--light-color);
 }
 
 #take-the-test {
-    padding: 8px 16px;
+    padding: var(--fill-unit) calc(2 * var(--fill-unit));
 }
 
 .hidden-button {
     border: none;
-    background-color: var(--primary-color, yellow);
+    background-color: var(--primary-color);
 }
 
 #scroll-down {
     display: block;
-    padding: 8px 16px;
+    padding: var(--fill-unit) calc(2 * var(--fill-unit));
     text-decoration: none;
-    color: var(--light-color, white);
+    color: var(--light-color);
 }
 
 .image-container {
@@ -148,10 +149,10 @@ html {
 .bike-vector {
     height: auto;
     width: 300px;
-    border-radius: var(--tile-border-radius, 12.5px);
+    border-radius: var(--tile-border-radius);
     pointer-events: none;
     font-family: 'Bitter', serif;
-    color: var(--dark-color, black);
+    color: var(--dark-color);
     font-size: 1.5rem;
     line-height: 1.75rem;
 }
@@ -160,8 +161,8 @@ html {
     display: flex;
     flex-direction: column;
     height: min-content;
-    padding: 16px;
-    border-radius: var(--tile-border-radius, 12.5px);
+    padding: calc(2 * var(--fill-unit));
+    border-radius: var(--tile-border-radius);
 }
 
 .social-media-icon {
@@ -172,8 +173,8 @@ html {
     border-radius: 50%;
     width: 3.5rem;
     height: 3.5rem;
-    margin-bottom: 16px;
-    border-radius: var(--tile-border-radius, 12.5px);
+    margin-bottom: calc( 2 * var(--fill-unit));
+    border-radius: var(--tile-border-radius);
     transition: .5s all ease;
     box-shadow: 2.5px 2.5px 0 rgba(48, 48, 48, .75);
     font-size: 1.75rem;
@@ -184,24 +185,24 @@ html {
     opacity: 0;
     border: 5px solid transparent;
     border-radius: 50%;
-    padding: 8px;
+    padding: var(--fill-unit);
     font-size: 2rem;
     border: 2.5px solid transparent;
-    margin: 4px 0;
+    margin: calc(0.5 * var(--fill-unit)) 0;
 }
 
 /* ? Form Styling */
 
 .form {
-    background-color: var(--primary-color, yellow);
-    border-radius: var(--tile-border-radius, 12.5px);
+    background-color: var(--primary-color);
+    border-radius: var(--tile-border-radius);
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     justify-content: center;
-    margin-bottom: 16px;
-    padding-bottom: 24px;
+    margin-bottom: calc(2 * var(--fill-unit));
+    padding-bottom: calc(3 * var(--fill-unit));
 }
 
 .smaller-headline {
@@ -212,7 +213,7 @@ html {
     text-decoration: underline;
     text-underline-offset: .25rem;
     user-select: none;
-    padding: 24px;
+    padding: calc(3 * var(--fill-unit));
     border: 2.5px solid transparent;
 }
 
@@ -225,12 +226,12 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 16px;
+    margin-bottom: calc(2 * var(--fill-unit));
 }
 
 .first-input,
 .second-input {
-    margin: 4px 0;
+    margin: calc(0.5 * var(--fill-unit)) 0;
 }
 
 .input {
@@ -241,10 +242,10 @@ html {
 
 #email-input,
 #name-input {
-    border: 2.5px solid var(--dark-color, black);
-    background-color: var(--light-color, white);
-    border-radius: calc(var(--tile-border-radius, 12.5px) * 1.5);
-    padding: 0.75rem 8px;
+    border: 2.5px solid var(--dark-color);
+    background-color: var(--light-color);
+    border-radius: calc(var(--tile-border-radius) * 1.5);
+    padding: 0.75rem var(--fill-unit);
     font-family: 'Bitter', serif;
     transition: .5s all ease;
 }
@@ -255,14 +256,14 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 16px;
-    padding-bottom: 8px;
+    margin-bottom: calc(2 * var(--fill-unit));
+    padding-bottom: var(--fill-unit);
 }
 
 .question-header {
     font-size: 2.25rem;
     font-weight: 600;
-    padding: 24px;
+    padding: calc(3 * var(--fill-unit));
     text-align: center;
     border: 2.5px solid transparent;
 }
@@ -278,36 +279,24 @@ html {
 
 .answer-label {
     font-size: 1.75rem;
-    padding: 12px 24px 12px 12px;
+    padding: calc(1.5 * var(--fill-unit)) calc(3 * var(--fill-unit)) calc(1.5 * var(--fill-unit)) calc(1.5 * var(--fill-unit));
     display: flex;
     align-items: center;
-    margin: 5px 0;
+    margin: calc(var(--fill-unit) * 0.5) 0;
     border-radius: var(--tile-border-radius);
-    background-color: var(--darkened-primary-color, gold);
+    background-color: var(--darkened-primary-color);
     transition: .5s all ease;
     border: 2.5px solid transparent;
 }
 
 .answer-label:hover {
     box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
-    border: 2.5px solid var(--dark-color, darkgrey);
+    border: 2.5px solid var(--dark-color);
     cursor: pointer;
 }
 
 .radio-button {
     opacity: 0;
-}
-
-.question-number {
-    font-family: 'Lakki Reddy', cursive;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12rem;
-    border-radius: 50%;
-    margin-top: 5rem;
-    overflow: hidden;
-    user-select: none;
 }
 
 /* ? Accessibility Styling */
@@ -316,10 +305,10 @@ html {
 .header:hover,
 .text-container:focus-visible,
 .image-container:focus-visible {
-    background-color: var(--darkened-primary-color, gold);
+    background-color: var(--darkened-primary-color);
     outline: none !important;
-    border-radius: var(--tile-border-radius, 12.5px);
-    border: 2.5px solid var(--secondary-color, darkblue);
+    border-radius: var(--tile-border-radius);
+    border: 2.5px solid var(--secondary-color);
 }
 
 .test-your-knowledge:hover,
@@ -329,7 +318,7 @@ html {
     box-shadow: 7.5px 7.5px 0 rgba(48, 48, 48, .75);
     cursor: pointer;
     outline: none;
-    border: 5px solid var(--light-color, white);
+    border: 5px solid var(--light-color);
 }
 
 .test-your-knowledge:active,
@@ -342,37 +331,37 @@ html {
     box-shadow: 5px 5px 0 rgba(48, 48, 48, .75);
     cursor: pointer;
     outline: none;
-    border: 2.5px solid var(--secondary-color, darkblue);
+    border: 2.5px solid var(--secondary-color);
 }
 
 .fab:focus-visible {
-    background-color: var(--darkened-primary-color, gold);
+    background-color: var(--darkened-primary-color);
     outline: none !important;
-    border-radius: var(--tile-border-radius, 12.5px);
-    border: 2.5px solid var(--secondary-color, darkblue);
+    border-radius: var(--tile-border-radius);
+    border: 2.5px solid var(--secondary-color);
 }
 
 .smaller-headline:focus-visible, .question-header:focus-visible {
-    background-color: var(--darkened-primary-color, gold);
+    background-color: var(--darkened-primary-color);
     outline: none !important;
-    border-radius: var(--tile-border-radius, 12.5px);
-    border: 2.5px solid var(--secondary-color, darkblue);
+    border-radius: var(--tile-border-radius);
+    border: 2.5px solid var(--secondary-color);
 }
 
 #email-input:hover,
 #name-input:hover {
-    background-color: var(--darkened-light-color, gray);
+    background-color: var(--darkened-light-color);
 }
 
 #email-input:focus,
 #name-input:focus {
     outline: none !important;
-    box-shadow: 0 0 0 2.5px var(--darkened-primary-color, gold);
+    box-shadow: 0 0 0 2.5px var(--darkened-primary-color);
 }
 
 .fab:hover {
-    border: 2.5px solid var(--darkened-primary-color, gold);
-    background-color: var(--darkened-primary-color, gold);
+    border: 2.5px solid var(--darkened-primary-color);
+    background-color: var(--darkened-primary-color);
     color: var(--dark-color);
 }
 
@@ -405,11 +394,11 @@ html {
 
 @media(max-width: 768px) {
     .landing-page {
-        flex-direction: column !important;
+        flex-direction: column;
     }
 
     .text-container {
-        margin-bottom: 36px;
+        margin-bottom: calc(4.5 * var(--fill-unit));
     }
 
     .question-number {
@@ -439,6 +428,6 @@ html {
     }
 
     .landing-page {
-        margin-top: 84px;
+        margin-top: calc(10.5 * var(--fill-unit));
     }
 }
