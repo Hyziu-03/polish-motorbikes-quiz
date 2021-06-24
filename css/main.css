@@ -71,7 +71,7 @@ html {
     opacity: 0;
     filter: alpha(opacity=1);
 }
-
+ 
 /* ? Landing Page Styling */
 
 .landing-page {
@@ -79,8 +79,7 @@ html {
     border-radius: var(--tile-border-radius);
     background-color: var(--primary-color);
     padding: calc(3 * var(--fill-unit));
-    margin-top: calc(8 * var(--fill-unit));
-    /* $ Top margin is not set properly. */
+    margin-top: calc(12 * var(--fill-unit));
     margin-bottom: calc(2 * var(--fill-unit));
 }
 
@@ -297,6 +296,21 @@ html {
 
 .radio-button {
     opacity: 0;
+}
+
+.final-words {
+    background: var(--primary-color);
+    border: 2.5px solid var(--light-color);
+    display: flex;
+    align-items: center;
+    border-radius: var(--tile-border-radius);
+    padding: 24px 32px;
+    line-height: 1.75rem;
+    font-size: 1.75rem;
+}
+
+.result {
+    margin: 0 auto;
 }
 
 /* ? Accessibility Styling */
