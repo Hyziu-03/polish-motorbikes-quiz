@@ -155,7 +155,7 @@ generateAnswers();
 function readAnswers() {
     var answerLabels = document.getElementsByClassName('answer-label');
     var answersNumber = answerLabels.length;
-    var answeredQuestions = 0;
+    var answeredQuestions = 1;
 
     for (var i = 0; i < answersNumber; i++) {
         answerLabels[i].addEventListener('click', function (e) {
@@ -167,7 +167,7 @@ function readAnswers() {
                 this.parentElement.style.pointerEvents = "none";
             }
 
-            if(answeredQuestions == 19) {
+            if(answeredQuestions == 20) {
                 var result = document.getElementById('result');
                 result.innerHTML = 'You have scored ' + points / 2 + ' points out of 10!';
             } else {
@@ -358,3 +358,15 @@ function setAccessibleFocusStates() {
     }
 }
 setAccessibleFocusStates();
+
+var copyIcon = document.getElementById('copy');
+copyIcon.addEventListener('click', function() {
+    var copiedText = 'I have scored ' + points + ' points in the quiz about polish motorbikes. Test your knowledge there too!';
+    navigator.clipboard.writeText(copiedText).then(function() {
+        console.log('Access your copied text!');
+        copyIcon.style.background = '#00E230';
+    }, function(exception) {
+        console.error(exception);
+        copyIcon.style.background = 'E21700';
+    });
+});
