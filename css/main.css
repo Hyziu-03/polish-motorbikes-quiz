@@ -298,19 +298,44 @@ html {
     opacity: 0;
 }
 
-.final-words {
+.final-words, .footer {
     background: var(--primary-color);
     border: 2.5px solid var(--light-color);
     display: flex;
     align-items: center;
     border-radius: var(--tile-border-radius);
     padding: 24px 32px;
-    line-height: 1.75rem;
     font-size: 1.75rem;
+}
+
+.final-words {
+    margin-bottom: calc(2 * var(--fill-unit));
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 0;
+    padding-top: 16px;
+}
+
+.copyright {
+    width: 100%;
 }
 
 .result {
     margin: 0 auto;
+}
+
+.fa-copy {
+    
+    border-radius: var(--tile-border-radius);
+    transition: .5s all ease;
+    cursor: pointer;
+}
+
+.fa-copy:hover {
+    background-color: var(--darkened-primary-color);
 }
 
 /* ? Accessibility Styling */
