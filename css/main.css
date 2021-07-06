@@ -304,7 +304,7 @@ html {
     display: flex;
     align-items: center;
     border-radius: var(--tile-border-radius);
-    padding: 24px 32px;
+    padding: calc(3 * var(--fill-unit)) calc(4 * var(--fill-unit));
     font-size: 1.75rem;
 }
 
@@ -315,12 +315,12 @@ html {
 .footer {
     text-align: center;
     font-size: 1.25rem;
-    padding: 0;
-    padding-top: 16px;
 }
 
 .copyright {
+    padding-top: var(--fill-unit);
     width: 100%;
+    margin-bottom: 0 !important;
 }
 
 .result {
@@ -328,7 +328,6 @@ html {
 }
 
 .fa-copy {
-    
     border-radius: var(--tile-border-radius);
     transition: .5s all ease;
     cursor: pointer;
@@ -454,6 +453,10 @@ html {
 @media(max-width: 390px) {
     html {
         font-size: 9px;
+    }
+
+    .result {
+        margin-left: 8px;
     }
 }
 

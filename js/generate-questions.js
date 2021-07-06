@@ -359,6 +359,7 @@ function setAccessibleFocusStates() {
 }
 setAccessibleFocusStates();
 
+// ? Copying results to clipboard:
 var copyIcon = document.getElementById('copy');
 copyIcon.addEventListener('click', function() {
     var copiedText = 'I have scored ' + points + ' points in the quiz about polish motorbikes. Test your knowledge there too!';
